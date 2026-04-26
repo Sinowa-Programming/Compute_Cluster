@@ -1,0 +1,12 @@
+[submodule "pico"]
+	path = pico
+	url = https://github.com/Sinowa-Programming/pico.git
+[submodule "linux"]
+	path = linux
+	url = https://github.com/Sinowa-Programming/linux-pico.git
+[submodule "stm32_cluster_orchestrator"]
+	path = stm32_cluster_orchestrator
+	url = https://github.com/Sinowa-Programming/stm32_cluster_orchastrator.git
+[submodule "rp2350-Graphics-Array"]
+	path = rp2350-Graphics-Array
+	url = https://github.com/Sinowa-Programming/rp2350-Graphics-Array.git
