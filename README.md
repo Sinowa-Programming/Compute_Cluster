@@ -1,6 +1,6 @@
 # RP2350 Compute Cluster
 
-![Image of Compute Cluster PCB](images/rp2350 Graphics Array.png)
+![Image of Compute Cluster PCB](https://github.com/Sinowa-Programming/Compute_Cluster/blob/master/images/rp2350%20Graphics%20Array.png)
 
 A custom compute cluster made up of 16, 90 cent RP2350s! The goal of this project is to be able to run POSIX programs on hardware that was not designed for it. The RP2350 was chosen for it's dual-core nature with FPUs at the low price point of 90 cents on Digikey. On top of that it also has an MPU so memory faults can offload the burden of handling virtual memory to the hardware.
 
@@ -9,15 +9,15 @@ I created this project for two reasons: first, hardware decoders are no longer s
 
 ## System Architecture
 
-![Overview Block Diagram](images/Process Array Block Diagram.drawio.svg)
-![Pico Cluster Node](images/Process Array.drawio.svg)
+![Overview Block Diagram](https://github.com/Sinowa-Programming/Compute_Cluster/blob/master/images/Process%20Array%20Block%20Diagram.drawio.svg)
+![Pico Cluster Node](https://github.com/Sinowa-Programming/Compute_Cluster/blob/master/images/Process%20Array.drawio.svg)
 
 The project is divided into four distinct repositories, the compute cluster node firmware, the cluster orchestrator firmware, the linux usb code, and the actual compute pcb.
 
-* [`pico`](pico): The cluster node. Contains the VMMU(Virtual Memory Management Unit) and interface functions that provides the platform to run client programs.
-* [`stm_cluster_orchestrator`](stm_cluster_orchestrator): A parallel codebase to pico, serving as an auxillery interface that provides additional caching and USB 2.0 High Speed communication.
-* [`linux`](linux): Linux user-space application responsible for controlling the cluster. It serves commands over USB to the cluster, handles file management, and serves as a swap provider of last resort.
-* [`pcb-design`](rp2350-Graphics-Array): The EDA files of the compute cluster.
+* [`pico`](https://github.com/Sinowa-Programming/pico): The cluster node. Contains the VMMU(Virtual Memory Management Unit) and interface functions that provides the platform to run client programs.
+* [`stm_cluster_orchestrator`](https://github.com/Sinowa-Programming/stm32_cluster_orchastrator): A parallel codebase to pico, serving as an auxillery interface that provides additional caching and USB 2.0 High Speed communication.
+* [`linux`](https://github.com/Sinowa-Programming/linux-pico): Linux user-space application responsible for controlling the cluster. It serves commands over USB to the cluster, handles file management, and serves as a swap provider of last resort.
+* [`pcb-design`](https://github.com/Sinowa-Programming/rp2350-Graphics-Array): The EDA files of the compute cluster.
 
 ## Work in Progress
 
