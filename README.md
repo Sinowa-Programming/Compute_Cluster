@@ -29,8 +29,11 @@ The project is divided into four distinct repositories, the compute cluster node
 - [X] POSIX Pthread create support
 - [X] MPU-Based Paging
 - [X] Memory Handling
-- [ ] File Management | In Progress
-- [ ] Log Commands from Cluster | In Progress
+- [X] File Management
+- [X] Log Commands from Cluster
+- [X] Custom Context Switching
+- [ ] VMM volatile memory support | In Progress
+- [ ] Replace FreeRTOS with own RTOS for Client Programs | In Progress
 - [ ] Neigbor-Node Page Fetching | In Progress
 - [ ] Physical PCB Testing | In Progress
 - [ ] SD Card Caching
